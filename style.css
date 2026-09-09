@@ -1,0 +1,134 @@
+/*
+    COLOR PALETTE
+
+    Yellow:     #FCC445
+    - Used for highlights, borders, and the food quote background.
+
+    Orange:     #F05A28
+    - Used for the main heading.
+
+    Green:      #8BC34A
+    - Used for subheadings.
+
+    Cream:      #FFF3D6
+    - Used for the main page background.
+
+    Dark Brown: #3B2F2F
+    - Used for the main text and quote text.
+*/
+
+/* logo */
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* Main Page */
+
+body {
+    background-color: #FFF3D6;
+    color: #3B2F2F;
+    /* Font for the main content */
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Heading */
+
+h1 {
+    color: #F05A28;
+    /* Heading font */
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Subheadings */
+
+h2 {
+    color: #8BC34A;
+    /* Different font from paragraph */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: 25px;
+    border-left: 8px solid #FCC445;
+    padding-left: 12px;
+}
+
+/* Paragraphs */
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* First Section
+   Text + Photo */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* Text on the left */
+
+.about-text {
+    flex: 1;
+}
+
+/* Photo on the right */
+
+.about-photo {
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 30px;
+}
+
+
+/* Photo size */
+
+.about-photo img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    /* Yellow border */
+    border: 3px solid #FCC445;
+}
+
+/* Culture & Dream Sections */
+
+section {
+    margin-top: 35px;
+    padding-top: 10px;
+}
+
+/* Food Quote */
+
+.food-quote {
+    background-color: #FCC445;
+    margin-top: 40px;
+    padding: 10px 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.food-quote p {
+    color: #3B2F2F;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
