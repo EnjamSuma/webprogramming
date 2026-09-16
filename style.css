@@ -25,8 +25,37 @@
 }
 
 .logo img {
-    width: 180px;
+    width: 150px;
     height: auto;
+}
+
+/*
+    Navigation Layout
+
+    Flexbox is used to arrange the navigation
+    links horizontally across the page.
+*/
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #FCC445;
+    padding: 15px;
+}
+
+/* Style the navigation links */
+.navigation a {
+    color: #3B2F2F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+/* Change the link appearance when the mouse is over it */
+.navigation a:hover {
+    background-color: #FFF3D6;
+    border-radius: 8px;
 }
 
 /* Main Page */
@@ -71,16 +100,24 @@ p {
     margin-bottom: 20px;
 }
 
+/* Main content area
+   Keeps the About page content centered and readable */
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
 /* First Section
    Text + Photo */
 
 .about-section {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
     margin-bottom: 40px;
 }
-
 
 /* Text on the left */
 
@@ -95,7 +132,6 @@ p {
     text-align: center;
     margin-right: 30px;
 }
-
 
 /* Photo size */
 
@@ -115,20 +151,24 @@ section {
     padding-top: 10px;
 }
 
-/* Food Quote */
-
-.food-quote {
-    background-color: #FCC445;
-    margin-top: 40px;
-    padding: 10px 25px;
-    border-radius: 12px;
-    text-align: center;
+/*
+    Simple Footer
+    Flexbox is used to arrange the quote
+*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #3B2F2F;
 }
 
-.food-quote p {
-    color: #3B2F2F;
-    font-size: 20px;
+/* Food quote in the footer */
+.footer p {
+    color: #FFF3D6;
+    font-size: 18px;
     font-weight: bold;
-    margin: 10px;
+    margin: 0;
 }
-
